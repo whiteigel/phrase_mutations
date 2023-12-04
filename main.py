@@ -1,6 +1,9 @@
 from phrase import original_phrase
 from positions import new_positions
 
+# original_phrase = "word earth man..." sample.
+# new_positions = [1, 4, 6, 2,...] sample. Make sure the total number of words == number of positions
+
 def mutate_phrase(phrase, new_positions):
     words = phrase.split()
     original_positions = {word: words.index(word) for word in words}
@@ -25,4 +28,3 @@ print("Mutated Phrase:", mutated_phrase)
 # Revert changes
 reverted_phrase = revert_phrase(mutated_phrase, original_positions)
 print("Reverted Phrase:", reverted_phrase)
-print("Original Phrase:", original_phrase)
