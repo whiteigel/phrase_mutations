@@ -1,5 +1,5 @@
-from phrase import *
-from positions import *
+from phrase import original_phrase
+from positions import new_positions
 
 def mutate_phrase(phrase, new_positions):
     words = phrase.split()
