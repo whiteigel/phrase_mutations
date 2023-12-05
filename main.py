@@ -1,12 +1,6 @@
 from phrase import original_phrase
 from positions import new_positions
 
-# Create positions.py and phrase.py files. Put them to the same directory as main.py.
-# Put original_phrase var into phrase.py, put new_positions var into positions.py.
-# original_phrase = "word earth man..." sample.
-# new_positions = [1, 4, 6, 2,...] sample.
-# Make sure the total number of words == number of positions
-
 def mutate_phrase(phrase, new_positions):
     words = phrase.split()
     original_positions = {word: words.index(word) for word in words}
